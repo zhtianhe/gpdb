@@ -1,0 +1,8 @@
+
+CREATE OR REPLACE FUNCTION
+gp_add_segment_aux_mirror(int2, text, text, int4, text) 
+RETURNS int2
+AS 'MODULE_PATHNAME'
+VOLATILE
+EXECUTE ON MASTER
+LANGUAGE C STRICT;
